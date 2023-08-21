@@ -23,7 +23,7 @@
 class WebServer {
 public:
     WebServer(int port,int trigMode,int timeoutMS,bool optLinger,int threadNum);
-    ~WebServer();
+    ~WebServer(); //释放连接
 
     void Start(); //一切的开始
 
